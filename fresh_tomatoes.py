@@ -137,6 +137,7 @@ def create_movie_tiles_content(movies, tvshows):
     		info="Duration: " + data.duration
     	else:
     		print "Invalid video"
+    		continue
 
         # Extract the youtube ID from the url
         youtube_id_match = re.search(r'(?<=v=)[^&#]+', data.trailer_youtube_url)

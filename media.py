@@ -2,9 +2,11 @@ import webbrowser
 from time import ctime
 
 class Video():
-	""" Video is the parent class for the TvShow and Movie class. Dont touch this class, use it for inheritance. """
+	""" Video is the parent class for the TvShow and Movie class. 
+	This class is intended to be a superclass and objects of this parent class
+	alone will be invalid for generating the HTML file. """
 	def __init__(self, title, storyline, poster, trailer):
-		""" Object type Video initiated at """ 
+		""" Parent class Video init called at """ 
 		print (Video.__init__.__doc__ + ctime())
 		self.title = title
 		self.storyline = storyline
@@ -25,6 +27,7 @@ class TvShow(Video):
 		self.kind = 'TV'
 		self.season = season
 
+		# getter method to get the self.kind attribute
 	def gettype(self):
 		return self.kind
 
@@ -39,6 +42,7 @@ class Movie(Video):
 		self.kind = 'Movie'
 		self.duration = duration
 
+		# getter method to get the self.kind attribute
 	def gettype(self):
 		return self.kind
 		

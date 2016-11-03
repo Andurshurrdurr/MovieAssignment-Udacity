@@ -45,6 +45,7 @@ Seinfeld = media.TvShow("Seinfeld",
 Movies = [ToyStory,avatar,TAWP]
 TvShows = [Breaking_bad, Scrubs, Seinfeld]
 
-# Pass instances to fresh_tomatoes open_movies_page function to generate html page:
+# Pass instances to fresh_tomatoes open_movies_page function to
+# generate a HTML file and open it in the browser:
 
 fresh_tomatoes.open_movies_page(Movies, TvShows)
