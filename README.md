@@ -9,7 +9,7 @@ In addition to using the freshtomatoes module I have done some additions:
 
 Update:
 - Instantiating objects of a class now prints out when the object was instantiated
-- Provided Docstrings to classes. Write *Class*.__doc__ to get more info about the class 
+- Provided Docstrings to classes. 
 
 Yes, I did do it somehow more difficult for myself as i could just add a fifth string for the movie info with duration or season instead of using subclasses, but the point here was to practise.
 
