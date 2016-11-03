@@ -40,13 +40,11 @@ Seinfeld = media.TvShow("Seinfeld",
 						"http://www.sonypictures.com/tv/seinfeld/assets/images/onesheet.jpg",
 						"https://www.youtube.com/watch?v=M2lfZg-apSA",
 						"4")
-print Seinfeld.season
 
+# List of instances
 Movies = [ToyStory,avatar,TAWP]
 TvShows = [Breaking_bad, Scrubs, Seinfeld]
-print TAWP.gettype()
-print Seinfeld.gettype()
-print media.Movie.__name__
-print media.Movie.__module__
+
+# Pass instances to fresh_tomatoes open_movies_page function to generate html page:
 
 fresh_tomatoes.open_movies_page(Movies, TvShows)
